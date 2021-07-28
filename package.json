@@ -1,12 +1,14 @@
 {
   "private": true,
   "scripts": {
-    "start": "umi dev -max-old-space-size=1024",
-    "build": "umi build -max-old-space-size=1024",
+    "start": "umi dev",
+    "build": "umi build",
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "test:coverage": "umi-test --coverage",
+    "server-start": "node --max-old-space-size=1024 ./node_modules/.bin/umi dev",
+    "server-build": "node --max-old-space-size=1024 ./node_modules/.bin/umi build"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
