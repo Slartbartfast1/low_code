@@ -9,6 +9,8 @@ jobs:
     strategy:
       matrix:
         node-version: [16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }} 😄
@@ -27,3 +29,5 @@ jobs:
         target_branch: gh-pages
         build_dir: dist
         repo: Slartbartfast1.github.io
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
