@@ -30,4 +30,4 @@ jobs:
         build_dir: dist
         repo: Slartbartfast1/Slartbartfast1.github.io
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_PAT: 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
