@@ -26,7 +26,7 @@ jobs:
     - name: Deploy 🚀
       uses: crazy-max/ghaction-github-pages@v2
       with:
-        target_branch: gh-pages
+        target_branch: master
         build_dir: dist
         repo: Slartbartfast1/Slartbartfast1.github.io
       env:
